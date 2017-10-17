@@ -111,8 +111,8 @@ wrapHeader closeMessage header =
         empty
     else
         div [ class "modal-header" ]
-            [ maybe empty closeButton closeMessage
-            , Maybe.withDefault empty header
+            [ Maybe.withDefault empty header
+            , maybe empty closeButton closeMessage
             ]
 
 
